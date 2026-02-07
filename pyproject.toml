@@ -1,6 +1,5 @@
 [project]
 name = "onec-conf-fetcher"
-repository = "https://github.com/HexArchy/onec-conf-fetcher"
 version = "0.1.0"
 description = "NetExec module for 1C Enterprise configuration collection"
 readme = "README.md"
@@ -10,6 +9,9 @@ keywords = ["netexec", "1c", "pentesting", "security"]
 dependencies = [
     "impacket>=0.12.0",
 ]
+
+[project.urls]
+Repository = "https://github.com/HexArchy/onec-conf-fetcher"
 
 [dependency-groups]
 dev = [
@@ -29,6 +31,7 @@ ignore = ["RUF012", "SIM108"]
 python_version = "3.12"
 strict = true
 warn_return_any = true
+warn_unused_ignores = false
 
 [[tool.mypy.overrides]]
 module = ["nxc.*", "impacket.*"]

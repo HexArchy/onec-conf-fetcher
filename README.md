@@ -1,5 +1,7 @@
 # onec-conf-fetcher
 
+[![CI](https://github.com/HexArchy/onec-conf-fetcher/actions/workflows/ci.yml/badge.svg)](https://github.com/HexArchy/onec-conf-fetcher/actions/workflows/ci.yml)
+
 NetExec module for collecting and parsing 1C Enterprise configuration files from Windows targets via SMB.
 
 ## Features
@@ -19,6 +21,11 @@ NetExec module for collecting and parsing 1C Enterprise configuration files from
 ## Installation
 
 ```bash
+# From latest release
+curl -sL https://github.com/HexArchy/onec-conf-fetcher/releases/latest/download/onec_conf_fetcher.py \
+  -o ~/.nxc/modules/onec_conf_fetcher.py
+
+# Or from source
 cp src/onec_conf_fetcher.py ~/.nxc/modules/
 ```
 

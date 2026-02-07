@@ -12,6 +12,8 @@ Source: https://github.com/HexArchy/onec-conf-fetcher
 
 from __future__ import annotations
 
+__version__ = "0.1.0"
+
 import contextlib
 import json
 import re

@@ -46,21 +46,21 @@ nxc smb 192.168.1.0/24 -u admin -p pass -M onec_conf_fetcher -o EXPORT=true
 
 ## Module Options
 
-| Option   | Default                        | Description                     |
-|----------|--------------------------------|---------------------------------|
-| `EXPORT` | `false`                        | Export collected files to disk   |
-| `OUTPUT` | `~/.nxc/onec_conf_fetcher/`    | Custom output directory          |
+| Option   | Default                     | Description                    |
+| -------- | --------------------------- | ------------------------------ |
+| `EXPORT` | `false`                     | Export collected files to disk |
+| `OUTPUT` | `~/.nxc/onec_conf_fetcher/` | Custom output directory        |
 
 ## Collected Files
 
-| File           | Relative Path                        | Content                        |
-|----------------|--------------------------------------|--------------------------------|
-| `ibases.v8i`   | `1C\1CEStart\ibases.v8i`             | Database connections           |
-| `1cestart.cfg` | `1C\1CEStart\1cestart.cfg`           | Launcher settings              |
-| `def.usr`      | `1C\1cv8\def.usr`                    | Last 1C username               |
-| `1cv8conn.pfl` | `1C\1cv8\1cv8conn.pfl`              | Connection profiles (binary)   |
-| `appsrvrs.lst` | `1C\1cv8\appsrvrs.lst`              | Application servers            |
-| `nethasp.ini`  | `1C\1cv8\conf\nethasp.ini`          | HASP license server config     |
+| File           | Relative Path              | Content                      |
+| -------------- | -------------------------- | ---------------------------- |
+| `ibases.v8i`   | `1C\1CEStart\ibases.v8i`   | Database connections         |
+| `1cestart.cfg` | `1C\1CEStart\1cestart.cfg` | Launcher settings            |
+| `def.usr`      | `1C\1cv8\def.usr`          | Last 1C username             |
+| `1cv8conn.pfl` | `1C\1cv8\1cv8conn.pfl`     | Connection profiles (binary) |
+| `appsrvrs.lst` | `1C\1cv8\appsrvrs.lst`     | Application servers          |
+| `nethasp.ini`  | `1C\1cv8\conf\nethasp.ini` | HASP license server config   |
 
 Paths are resolved under `%APPDATA%` (`AppData\Roaming` on Vista+, `Application Data` on XP/2003).
 
@@ -81,6 +81,7 @@ OUTPUT/
 ## host_summary.json
 
 Contains:
+
 - Host info (IP, hostname, domain)
 - All enumerated users and which have 1C configs
 - Unique databases (server-based and file-based) with user mapping
